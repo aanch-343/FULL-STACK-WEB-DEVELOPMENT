@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery</title>
+    <link rel="icon" href="../assets/images/logo.png" type="png/image">
+    <link rel="stylesheet" href="../assets/css/stylegallery.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--magnific popup cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    
+
+</head>
+<body bgcolor="black">
+    <button class="btn"><a href="../src/index.html">Go Home</a></button>
+    <div class="gallery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="ambience">ambience</li>
+            <li class="buttons" data-filter="food">food</li>
+        </ul>
+        <div class="image-container">
+            <a href="../assets/images/feature1.jpg" class="image food">
+                <img src="../assets/images/feature1.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature2.jpg" class="image food">
+                <img src="../assets/images/feature2.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature3.jpg" class="image food">
+                <img src="../assets/images/feature3.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature4.jpg" class="image food">
+                <img src="../assets/images/feature4.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature5.jpg" class="image food">
+                <img src="../assets/images/feature5.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature6.jpg" class="image food">
+                <img src="../assets/images/feature6.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature7.jpg" class="image food">
+                <img src="../assets/images/feature7.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature8.jpg" class="image food">
+                <img src="../assets/images/feature8.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature10.jpg" class="image food">
+                <img src="../assets/images/feature10.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature11.jpg" class="image food">
+                <img src="../assets/images/feature11.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature12.jpg" class="image food">
+                <img src="../assets/images/feature12.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature13.jpg" class="image ambience">
+                <img src="../assets/images/feature13.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature14.jpg" class="image ambience">
+                <img src="../assets/images/feature14.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature15.jpg" class="image ambience">
+                <img src="../assets/images/feature15.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature16.jpg" class="image ambience">
+                <img src="../assets/images/feature16.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature17.jpg" class="image ambience">
+                <img src="../assets/images/feature17.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature18.jpg" class="image ambience">
+                <img src="../assets/images/feature18.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature19.jpg" class="image ambience">
+                <img src="../assets/images/feature19.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature20.jpg" class="image ambience">
+                <img src="../assets/images/feature20.jpg" alt="">
+            </a>
+            <a href="../assets/images/feature21.jpg" class="image ambience">
+                <img src="../assets/images/feature21.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <!--jquery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!--magnific pop up js cdn link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.buttons').click(function(){
+            $(this).addClass('active').siblings().removeClass('.active');
+
+            var filter = $(this).attr('data-filter')
+            if(filter == 'all'){
+                $('.image').show(400);
+            }else{
+                $('.image').not('.'+filter).hide(200);
+                $('.image').filter('.'+filter).show(400);
+
+              }
+        });
+        $('.gallery').magnificPopup({
+            delegate:'a',
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+
+        })
+    });
+  </script>
+   <!--footer-->
+   <footer>
+    <div class="row">
+      <div class="col">
+        <img src="../assets/images/logo.png" alt="">
+        <p>Make your party with delicious dishes</p>
+      </div>
+      <div class="col">
+        <h3 class="hh3">Contact Us</h3>
+        <p>178/6 14th main road,</p><p> 20th, 50th Main Rd,</p> <p>Kumaraswamy Layout, Bengaluru,</p> <p>Karnataka 560078</p>
+        <p class="email-id"><a href="mailto:leisuresquare8384@gmail.com">leisuresquare8384@gmail.com</a></p>
+        <h4><a href="tel:6366304818">6366304818</a></h4>
+      </div>
+      <div class="col">
+        <h3 class="hh3">Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="../src/about us.html">About US</a></li>
+          <li><a href="../src/gallery.html">Gallery</a></li>
+          <li><a href="../src/menu.html">Menu</a></li>
+          <li><a href="../src/order.html">Order Now</a></li>
+        </ul>
+        
+      </div>
+      <div class="col4">
+        <div class="social-links">
+          
+          <a href="https://www.facebook.com/leisuresquare/?hc_ref=ARQb0Rak5gaB9yxZW9tm5926IcU1yUMT10I0CdPyKVM_-0KyzorrbxDM6yG9_Plmi_c&ref=nf_target&__xts__[0]=68.ARA8VaNhTWRe6ZecTCzZwiE_WOP7-kKl5_IrXHLGOMMzBAaAlw4rG2zqsn7uYq1o6Xylcjh930C9uCK7tm9bticpMQFFbiPUdyrqhE6lhBtutjYGXOowz_nF1Be1XmtVVPghade5F6wlDDDIlGloNzKwYHqEdXjkz_dwlbv36lht32QH0aXzr4SmNjWt93h4jCZ8gySxxH3w2sg9v1Cfmbj9GhGx_vGKQUjIsLNOHNaMlnhUx25WvmoqAW7aiPFYYY63ppJlnVhOhlHfaOC7mZNYwqWpVlHKAuxOpBZkLlMYH_UlVkDm92pPEQmoK9f3-BeCVkpc0MIThicM2ZYars6s7RKvvpsfKHs18f1anNY64cHnpjOL0knHSEA7eAtW92wKmQ"><i class="fab fa-facebook-f"></i></a>
+         
+          <a href="https://www.instagram.com/leisure_square/"><i class="fab fa-instagram"></i></a>
+          
+        </div>
+      </div>
+    
+
+
+    </div>
+   </footer>
+
+<!--/footer-->
+</body>
+</html>
