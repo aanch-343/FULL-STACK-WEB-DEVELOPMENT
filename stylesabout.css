@@ -12,7 +12,7 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    color:white;
+    color:black;
     font-family:var(--f--base);
     line-height:1.2;
 }
