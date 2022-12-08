@@ -45,7 +45,7 @@ a{
     transition:all 0.4s ease-in-out;
 }
 a:hover{
-    color:whitw;
+    color#FEDB39:;
 }
 
 ul{
@@ -325,7 +325,7 @@ p{
         width: 100%;
         position: relative;
         bottom:0;
-        background:linear-gradient(to right, #DC5F00 ,#782b07);
+        background:white;
         color:#161414;
         padding:70px 0 30px;
         border-top-left-radius: 125px;
