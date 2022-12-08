@@ -185,7 +185,7 @@ p{
     /*hero*/
 #hero{
     min-height: 100vh;
-    background: linear-gradient(rgba(8, 0, 0, 0.311),rgba(0, 0, 0, 0.316)),url(../images/hero.jpeg);
+    background: linear-gradient(rgba(8, 0, 0, 0.311),rgba(0, 0, 0, 0.316)),url(hero.jpeg);
     background-position: center;
     background-size: cover;
     display: grid;
