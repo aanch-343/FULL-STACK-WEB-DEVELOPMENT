@@ -128,7 +128,7 @@ body{
   }
   .main-image{
     position: relative;
-    background: url(../images/cover.jpeg) center;
+    background: url(cover.jpeg) center;
     background-size:cover ;
     overflow: hidden;
     height: 200px;
