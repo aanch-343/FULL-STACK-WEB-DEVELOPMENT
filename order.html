@@ -1362,6 +1362,8 @@
         var taxRate = 0.05;
         var shippingRate = 15.00;
         var fadeTime = 300;
+
+
         /* Assign actions */
         $('.product-quantity input').change(function () {
             updateQuantity(this);
@@ -1376,7 +1378,10 @@
         $('.add-sheet button').click(function () {
             alert("Table Sheet is Confirmed...... Please Go to checkout ")
         });
- /* Recalculate cart */
+
+
+
+        /* Recalculate cart */
         function recalculateCart() {
             var subtotal = 0;
 
@@ -1423,6 +1428,7 @@
             });
         }
 
+
         /* Remove item from cart */
         function removeItem(removeButton) {
             /* Remove row from DOM and recalc cart total */
@@ -1436,3 +1442,7 @@
 </body>
 
 </html>
+       
+           
+            
+   
