@@ -278,7 +278,7 @@ p{
 
       }
   .card1>.container2:after{
-    background-image: ;
+    background-image:linear-gradient(135deg,#0100ec,#fb36f4) ;
   }
   .card2>.container2:after{
     background-image: linear-gradient(135deg,#e33d2b,#a2a73adc);
